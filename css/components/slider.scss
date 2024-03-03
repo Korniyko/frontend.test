@@ -1,0 +1,105 @@
+.contentWrapper {
+
+    .imagesWrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        .sliderContainer {
+            .swiper {
+                .swiper-wrapper {
+                    .swiper-slide {
+                        width: fit-content;
+                        height: fit-content;
+
+                    }
+                }
+
+                .swiper-button {
+                    position: absolute;
+                    bottom: 20px;
+                    right: 20px;
+                    display: flex;
+                    gap: 20px;
+
+                    .swiper-button-next,
+                    .swiper-button-prev {
+                        position: initial;
+                        inset: unset;
+
+                        &.swiper-button-disabled {
+                            opacity: 0.7;
+                        }
+                    }
+
+
+
+                }
+
+                .styleButtonSwiper {
+                    background-color: #F2F5F5;
+                    width: 44px;
+                    height: 44px;
+                    color: black;
+                    border-radius: 8px;
+                }
+
+                .styleButtonSwiper:after {
+                    font-size: 15px;
+                }
+            }
+
+            &.mainSliderContainer {
+                border: 1px solid #ECF2F3;
+            }
+
+            &.navSliderContainer {
+                .swiper {
+                    display: flex;
+                    align-items: center;
+
+                    .swiper-wrapper {
+                        width: calc(100% - 64px);
+
+                        .swiper-slide {
+
+                            width: fit-content;
+                            height: 100%;
+                            max-height: 72px;
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                max-width: 100%;
+                                max-height: inherit;
+                                object-fit: contain;
+                                display: flex;
+                            }
+
+                        }
+                    }
+
+
+
+                    .styleButtonSwiper {
+                        height: 72px;
+                        position: initial;
+                        background-color: #F2F5F5;
+                        min-width: 32px;
+                        width: 32px;
+                        color: black;
+                        border-radius: 8px;
+                        margin: 0;
+                    }
+
+                    .styleButtonSwiper:after {
+                        font-size: 15px;
+                    }
+                }
+            }
+
+
+        }
+    }
+
+}

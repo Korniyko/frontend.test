@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Test</title>
+
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<div class="searchPage">
+				<div class="titleHome">Home</div>
+				<img src="img/icons/Arrow_right_long.svg">
+				<div class="titleConveyors">Conveyors</div>
+				<img src="img/icons/Arrow_right_long.svg">
+				<div class="titleIncline titleProduct"></div>
+			</div>
+		</div>
+	</header>
+
+	<section>
+		<div class="container">
+			<div class="contentWrapper">
+				<div class="imagesWrapper">
+					<div class="sliderContainer mainSliderContainer">
+						<div class="swiper" id="mainProductsSlider">
+
+							<div class="swiper-wrapper">
+
+
+							</div>
+
+							<div class="swiper-button">
+								<div class="swiper-button-prev styleButtonSwiper"></div>
+
+								<div class="swiper-button-next styleButtonSwiper"></div>
+
+
+							</div>
+
+
+
+						</div>
+					</div>
+					<div class="sliderContainer navSliderContainer">
+						<div class="swiper" id="navProductsSlider">
+							<div class="swiper-button-prev styleButtonSwiper"></div>
+							<div class="swiper-wrapper">
+							</div>
+							<div class="swiper-button-next styleButtonSwiper"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="contentData">
+					<h1 class="titleProduct" id="mainProductTittle"></h1>
+					<div class="contentDataRow">
+
+						<div class="configurationContainer">
+
+							<div class="configuration">
+
+								<div class="conveyorInfo">
+									Conveyor Belt Width, in <img src="./img/icons/info_circle.svg" alt="ifo">
+								</div>
+								<div class="containerWidthConveyor">
+									<div class="cardsContainer" id="dimensionsContainer">
+										<template id="templateSize">
+											<div class="containerSize"></div>
+										</template>
+										<div class="containerSize customButtonStyle" id="customButton">Custom</div>
+									</div>
+
+									<div class="cardsContainerCustom" id="cardsContainerCustom">
+										<div class="stepperComponent">
+											<div class="containerSizeButton" id="sizeMinusConveyor">
+												<img src="./img/icons/VectorL.svg" alt="Vector">
+											</div>
+											<div class="containerSizeButton">
+												<input type="text" value="1" id="sizeValueElement"></input>
+												<span>"</span>
+											</div>
+
+											<div class="containerSizeButton" id="sizePlusConveyor">
+												<img src="./img/icons/VectorR.svg" alt="Vector">
+											</div>
+										</div>
+
+									</div>
+								</div>
+								<div class="conveyorInfo">
+									Bed Section Length, in <img src="./img/icons/info_circle.svg" alt="ifo">
+								</div>
+								<div class="containerWidthConveyor">
+									<div class="stepperComponent">
+
+										<div class="containerSizeButton" id="buttonMinusConveyorLength">
+											<img src="./img/icons/VectorL.svg" alt="Vector">
+										</div>
+										<div class="containerSizeButton">
+											<input type="text" value="10" id="inputValueConveyorLength"></input>
+											<span>"</span>
+										</div>
+										<div class="containerSizeButton" id="buttonPlusConveyorLength">
+											<img src="./img/icons/VectorR.svg" alt="Vector">
+										</div>
+
+									</div>
+								</div>
+
+								<div class="additionsProduct">
+
+									<div class="descriptionProducts" data-value="Chain Driven Feeder" >
+										<div class="box"><img src="./img/icons/State=Inactive, Checled=No.svg"
+												alt="Inactive" class="checkButton">
+											<img src="./img/icons/Checkbox.svg" alt="Checkbox" class="checkboxBlue">
+											Chain Driven Feeder
+										</div>
+
+										<img src="./img/icons/info_circle.svg" alt="ifo">
+									</div>
+									<div class="descriptionProducts" data-value="Additional Support Structures">
+										<div class="box"><img src="./img/icons/State=Inactive, Checled=No.svg"
+												alt="Inactive" class="checkButton">
+											<img src="./img/icons/Checkbox.svg" alt="Checkbox" class="checkboxBlue">
+											Additional Support Structures
+										</div>
+
+										<img src="./img/icons/info_circle.svg" alt="ifo">
+									</div>
+									<div class="descriptionProducts" data-value="Knee Braces">
+										<div class="box"><img src="./img/icons/State=Inactive, Checled=No.svg"
+												alt="Inactive" class="checkButton">
+											<img src="./img/icons/Checkbox.svg" alt="Checkbox" class="checkboxBlue">
+
+											Knee Braces
+										</div>
+
+										<img src="./img/icons/info_circle.svg" alt="ifo">
+									</div>
+									<div class="descriptionProducts" data-value="Enhanced support" >
+										<div class="box"><img src="./img/icons/State=Inactive, Checled=No.svg"
+												alt="Inactive" class="checkButton">
+											<img src="./img/icons/Checkbox.svg" alt="Checkbox" class="checkboxBlue">
+
+											Enhanced support
+										</div>
+
+										<img src="./img/icons/info_circle.svg" alt="ifo">
+									</div>
+
+								</div>
+								<div class="additionsProductSelect">
+									<div class="conveyorInfo">
+										Additional options <img src="./img/icons/info_circle.svg" alt="ifo">
+									</div>
+									<select id="additionsSelect" name="additions">
+										<option value="" disabled selected>Select options</option>
+										<option value="Chain Driven Feeder">Chain Driven Feeder</option>
+										<option value="Additional Support Structures">Additional Support Structures
+										</option>
+										<option value="Knee Braces">Knee Braces</option>
+										<option value="audi">Enhanced support</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="basketCard">
+							<div class="basketCardRow">
+								<div class="skuProduct">SKU: <div id="skuProductValue" ></div>
+								</div>
+								<div class="containerRow">
+									<button class="buttonUponRequest"><img src="./img/icons/Check.svg" alt="Check"> Upon
+										request</button>
+									<div class="reviewsContainer">
+										<img src="./img/icons/Frame 176.svg" alt="reviews"> <span>READ <img
+												src="./img/icons/VectorR.svg" alt="Vector"></span>
+									</div>
+								</div>
+
+							</div>
+							<div class="basketCardRowPrice">
+								<div class="priceProduct ">
+									From <div class="price"> $22360 </div>
+									<div class="priceRow">EA </div>
+									<div class="price">*</div>
+								</div>
+								<div class="cauntProduct">
+									<button class="buttonCauntProduct" id="buttonMinusCauntProduct">-</button>
+									<input type="text" value="1" id="inputElementCauntProduct">
+									<button class="buttonCauntProduct" id="buttonPlusCauntProduct">+</button>
+								</div>
+								<button class="buttonREquest" id="rEquestButton"><img src="./img/icons/Flag.svg"
+										alt="Flag">REquest</button>
+								<div class="decriptionText">*Final price is defined after a consultation with our
+									specialist
+									due
+									to
+									actual
+									conditions of use.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="js/index.js"></script>
+</body>
+
+</html>

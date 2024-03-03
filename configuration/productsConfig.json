@@ -1,0 +1,40 @@
+[
+    {
+        "id": 1,
+        "productName": "Incline & Decline Conveyors",
+        "skuProduct":"WMD-2446F-GRYI",
+        "images": [
+            "img/pixel/mainImg1.png",
+            "img/pixel/mainImg2.png",
+            "img/pixel/mainImg3.png",
+            "img/pixel/mainImg4.png",
+            "img/pixel/mainImg5.png"
+        ],
+        "dimensions": [
+            {
+                "size": 10
+            },
+            {
+                "size": 18
+            },
+            {
+                "size": 24
+            },
+            {
+                "size": 30
+            },
+            {
+                "size": 36
+            },
+            {
+                "size": 42
+            },
+            {
+                "size": 48
+            },
+            {
+                "size": 54
+            }
+        ]
+    }
+]
